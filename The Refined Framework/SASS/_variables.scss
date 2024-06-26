@@ -1,8 +1,4 @@
-/*
-Author: Garrett Snearly
-Owner: Refined Web Development
-Date Created: 6/7/24
-*/
+
 $body: #333;
 $primaryFont: "Open Sans", sans-serif;
 $secondaryFont: "Roboto", sans-serif;
@@ -10,6 +6,7 @@ $white: #fff;
 $primaryBorder: #450012;
 $primary: #007bff;
 $secondary: #6c757d;
+$bookstore: #450012;
 $success: #28a745;
 $danger: #dc3545;
 $warning: #ffc107;
@@ -17,6 +14,14 @@ $info: #117a8b;
 $muted: #c0c0c0;
 $light: #dae0e5;
 $dark: #1d2124;
+
+$nav-background-color: #450012;
+$nav-forground-color: #fff;
+$nav-hover-color: #bb9847;
+$nav-sub-background-color: #ffff;
+$nav-sub-text-color: #450012;
+$nav-sub-border-color: #0088cc;
+
 
 $style-type: (
 	"primary": $primary,

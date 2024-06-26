@@ -1,0 +1,94 @@
+.nav-main{
+    width: 100%;
+    background-color: $nav-background-color;
+    height: 110px;
+    color: $nav-forground-color;
+    position: fixed;
+    z-index: 1;
+
+    .logo{
+        float: left;
+        height: 40px;
+        padding: 15px 30px;
+        font-size: 1.4em;
+        line-height: 80px;
+
+    }
+
+    .img-logo  {
+        float: left;
+        width: 80px;
+        line-height: 70px;
+        height: 80px;
+    }
+
+    > ul {
+        @extend %plainlist;
+        float: left;
+        width: auto;
+      
+
+        > li {
+            float: left;
+            width: auto;
+        }
+    }
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 15px 20px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    color: $nav-forground-color;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $nav-hover-color;
+
+    }
+
+    &:focus {
+        background-color: $nav-hover-color;
+
+        ~ .nav-content {
+            max-height: 400px;
+            @include transition(max-height, 0.4s, ease-in);
+        }
+    }
+}
+
+.nav-content {
+    position: absolute;
+    top: 110px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $nav-sub-background-color;
+    color: $nav-sub-text-color;
+    
+
+    a {
+        color: $nav-sub-text-color;
+        text-decoration: none;
+        
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-sub {
+    padding: 20px;
+    border-top: 3px solid $nav-sub-border-color;
+
+    ul {
+        @extend %plainlist;
+
+        a {
+            display: inline-block;
+            padding: 5px 0;
+        }
+    }
+}

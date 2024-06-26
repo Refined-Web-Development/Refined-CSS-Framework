@@ -1,8 +1,4 @@
-/*
-Author: Garrett Snearly
-Owner: Refined Web Development
-Date Created: 6/7/24
-*/
+
 @each $type, $class in $style-type {
 	.alert-#{$type} {
 		background-color: $class;
